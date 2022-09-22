@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="scss/custom.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/interaccion.js"></script>
+    <script src="js/procesa.js"></script>
+
+
+</head>
+<body>
+
+    <form action="" method="POST" accept-charset="ISO-8859-1" id="frmenviar">
+        <div class="container-fluid my-2">
+    
+            <div class="row mx-3 shadow p-3 mb-5 bg-body rounded">
+
+                <div class="col-2 my-2">
+
+                    <div class="form-check">
+                    
+                    <label class="form-check-label fw-bold" for="flexRadioDefault1"><input class="form-check-input boton radio1" type="radio" name="flexRadioDefault" id="radio_button">Empresa
+                    </label>
+                    </div>
+
+                </div>
+
+                <div class="col-10 my-2">
+                    <div class="form-check">
+                    
+                    <label class="form-check-label fw-bold" for="flexRadioDefault1"><input class="form-check-input boton radio1" type="radio" name="flexRadioDefault" id="radio_button1">Particular
+                    </label>
+                    </div>
+                </div>
+        
+                <div class="col-6">
+
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control my-2" value="" name="nombre" id="nombre"/>
+
+                    <label class="form-label">País</label>
+                    <input type="text" class="form-control my-2" value="" name="pais" id="pais"/>
+
+                    <label class="form-label">Ciudad</label>
+                    <input type="text" class="form-control my-2" value="" name="ciudad" id="ciudad"/>
+
+                    <label class="form-label">Cargo</label>
+                    <input type="text" class="form-control my-2" value="" name="cargo" id="cargo"/>
+
+                    <label class="form-label">Áreas de Apoyo</label>
+                    <select class="form-select my-2" name="area_apoyo" id="area_apoyo">
+                        <option value="" selected>Seleccione un Item</option>
+                        <option value="Adquisición de Repuestos">Adquisición de Repuestos</option>
+                        <option value="Adquisición de Equipos">Adquisición de Equipos</option>
+                        <option value="Adquisición de Sistemas">Adquisición de Sistemas</option>
+                        <option value="Apoyo de Proyectos">Apoyo de Proyectos</option>
+                        <option value="Análisis de Condición">Análisis de Condición</option>
+                    </select>
+
+                </div>        
+        
+                <div class="col-6">
+        
+                    <label class="form-label">Apellido</label>
+                    <input type="text" class="form-control my-2" value="" name="apellido" id="apellido"/>
+
+                    <label class="form-label">Región</label>
+                    <input type="text" class="form-control my-2" value="" name="region" id="region"/>
+
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control my-2" value="" name="email" id="email"/>
+
+                    <label class="form-label">Nombre Empresa</label>
+                    <input type="text" class="form-control my-2" value="" name="nombre_empresa" id="nombre_empresa"/>
+
+                    <label class="form-label">Sector Industrial</label>
+                    <select class="form-select my-2" name="sector_industrial" id="sector_industrial">
+                        <option value="" selected>Seleccione un Item</option>
+                        <option value="Construcción Naval">Construcción Naval</option>
+                        <option value="Defensa (Armada- Fuerza Aérea- Ejército)">Defensa (Armada- Fuerza Aérea- Ejército)</option>
+                        <option value="Industría Minera">Industría Minera</option>
+                        <option value="Industría Marítima">Industría Marítima</option>
+                        <option value="Industría Portuaría">Industría Portuaría</option>
+                        <option value="Industría Energética">Industría Energética</option>
+                        <option value="Industría Acuícola">Industría Acuícola</option>
+                        <option value="Industría Ferroviaria">Industría Ferroviaria</option>
+                        <option value="Otras Industrias">Otras Industrias</option>
+                    </select>
+                  
+                </div>
+
+                <div class="col-1">
+
+                    <label class="form-label">Teléfono</label>
+                    <input type="number" class="form-control my-2" value="" name="codigo_pais" id="codigo_pais" maxlength="2"/>
+
+                </div>
+
+                <div class="col-5">
+                    
+                    <label class="form-label"></label>
+                    <input type="number" class="form-control mt-3 mb-2" value="" name="telefono" id="telefono" maxlength="9"/>
+
+                </div>
+
+                <div class="col-6">
+
+                    <label class="form-label">Título</label>
+                    <input type="text" class="form-control my-2" value="" name="titulo" id="titulo"/>
+                
+                </div>
+
+                <div class="col-12 my-2">
+
+                    <label class="form-label">Necesidad</label>
+                    <textarea type="text" class="form-control my-2" name="necesidad" id="necesidad" style="height: 100px; resize: none;"></textarea>
+
+                    <button type="submit" class="btn btn-primary w-100 my-2" id="btn_ingresar">Enviar</button>
+
+                </div>
+        
+            
+        
+        </div>
+    </form>
+    
+</body>
+</html>
